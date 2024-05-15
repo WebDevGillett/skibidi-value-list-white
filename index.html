@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script defer src="index.js"></script>
+
+    <style type="text/css">
+        ::-webkit-scrollbar {
+          width: 12px;
+          background-color: #111111;
+    
+        }
+    
+        ::-webkit-scrollbar-thumb {
+          background-color: #212121;
+          border-radius: 5px;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: #212121;
+        }
+    
+        :hover ::-webkit-scrollbar-track {
+          background-color: #1000;
+        }
+    
+        ::-webkit-scrollbar-track {
+          background-color: #1000;
+          border-radius: 5px;
+        }
+    
+        ::-moz-scrollbar-thumb {
+          background-color: #212121;
+    
+        }
+    
+        ::-moz-scrollbar-thumb:hover {
+          background-color: #212121;
+        }
+    
+        ::-moz-scrollbar-track {
+          background-color: #1000;
+          border-radius: 5px;
+        }
+    
+        @supports (-ms-overflow-style: none) {
+          ::-ms-scrollbar-thumb {
+            background-color: #212121;
+    
+          }
+    
+          ::-ms-scrollbar-thumb:hover {
+            background-color: #212121;
+          }
+    
+          ::-ms-scrollbar-track {
+            background-color: #1000;
+            border-radius: 5px;
+          }
+        }
+        </style>
+</head>
+<body>
+
+    <div id="container">
+        <div class="items">
+            <div id="items-1" class="items-container">
+                <div style="border-radius: 10px; background-color:#000000" id="add-item-1" class="item">
+                    <div style="background-image: url(https://rostudiosite.github.io/myresturantvaluescalculator/plus.png);" class="background-image"></div>
+                </div>
+            </div>
+            <p id="value1">Value: 0</p>
+        </div>
+
+        <div class="items">
+            <div id="items-2" class="items-container">
+                <div style="border-radius: 10px; background-color:#000000"  id="add-item-2" class="item">
+                    <div style="background-image: url(https://rostudiosite.github.io/myresturantvaluescalculator/plus.png);" class="background-image"></div>
+                </div>
+            </div>
+            <p id="value2">Value: 0</p>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="placeholder-flex">
+              <input placeholder="Search Items" class="search-bar" type="text" onkeyup="console.log(search())">
+              <span class="close">&times;</span>
+            </div>
+            <div class="grid-container">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
